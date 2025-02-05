@@ -1,0 +1,26 @@
+{
+  "title": "Kingblade x10iii Tuning Tool",
+  "description": "Tunes your super old Kingblade x10iii with ease",
+  "set_default_colors": "Set default colors",
+  "save_preset": "Save Preset",
+  "scan_qr_code": "Scan QR Code",
+  "color_settings": "Color Settings",
+  "site_name": "Kingbalde x10iii Tool",
+  "dialog": {
+    "close": "Close"
+  },
+  "footer": {
+    "created_by": "Created by",
+    "footer_text": "Algorithm from kjy00302 on GitHub",
+    "source_code": "Check out source code on"
+  },
+  "error_page": {
+    "title": "Oopsie",
+    "text": "Sometimes refreshing the page fix it, Clearing the data might also fix it too. If it doesn't ping ",
+    "discord_link": "@hamp on Discord",
+    "to_fix_it": " to fix it.",
+    "copy": "Copy Error Message",
+    "reload": "Reload Page",
+    "clear": "Clear Data and Reload Page"
+  }
+}

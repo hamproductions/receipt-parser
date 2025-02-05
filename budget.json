@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/*",
+    "timings": [
+      {
+        "metric": "first-contentful-paint",
+        "budget": 3000
+      },
+      {
+        "metric": "largest-contentful-paint",
+        "budget": 4000
+      }
+    ],
+    "resourceSizes": [
+      {
+        "resourceType": "script",
+        "budget": 500
+      },
+      { "resourceType": "font", "budget": "5000" },
+      {
+        "resourceType": "total",
+        "budget": 6000
+      }
+    ],
+    "resourceCounts": [
+      {
+        "resourceType": "third-party",
+        "budget": 100
+      }
+    ]
+  }
+]
