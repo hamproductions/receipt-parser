@@ -27,5 +27,6 @@
   "download": "Download",
   "remove": "Remove",
   "download-all": "Download All",
-  "clear": "Clear"
+  "clear": "Clear",
+  "fill-in-api-key": "Fill in the API key"
 }
