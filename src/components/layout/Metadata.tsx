@@ -7,7 +7,7 @@ export function Metadata(props: { title?: string; helmet?: boolean }) {
   const title = props.title ?? t('title', { titlePrefix: t('defaultTitlePrefix') });
   const description = t('description');
   const siteName = t('site_name');
-  const url = 'https://hamproductions.github.io/kingblade-x10iii-tool/';
+  const url = 'https://hamproductions.github.io/receipt-parser/';
   const Wrapper = props.helmet ? Helmet : Fragment;
 
   return (

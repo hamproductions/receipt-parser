@@ -1,6 +1,6 @@
 import { defineConfig } from '@pandacss/dev';
 import { createPreset } from '@park-ui/panda-preset';
-import pink from '@park-ui/panda-preset/colors/mauve';
+import pink from '@park-ui/panda-preset/colors/pink';
 import mauve from '@park-ui/panda-preset/colors/mauve';
 import { theme } from './src/theme';
 

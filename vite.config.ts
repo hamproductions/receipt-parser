@@ -28,7 +28,8 @@ export default defineConfig({
         'lz-string',
         'react-helmet-async',
         'wavefile',
-        'react-qr-scanner'
+        'react-qr-scanner',
+        'file-saver'
       ]
     }),
     react({

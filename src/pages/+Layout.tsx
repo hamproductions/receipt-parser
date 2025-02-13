@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Container, HStack, Stack } from 'styled-system/jsx';
 import { ColorModeToggle } from '~/components/layout/ColorModeToggle';
 import { Footer } from '~/components/layout/Footer';
-import { LanguageToggle } from '~/components/layout/LanguageToggle';
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -10,7 +9,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <Container zIndex="1" position="relative" flex={1} w="full" py={4} px={4}>
         <Stack>
           <HStack justifyContent="flex-end" w="full">
-            <LanguageToggle />
             <ColorModeToggle />
           </HStack>
           {children}

@@ -19,7 +19,7 @@ export function Footer() {
       </Wrap>
       <Wrap justifyContent="center" w="full">
         <Text>{t('footer.source_code')}</Text>
-        <Link href="https://github.com/hamproductions/kingblade-x10iii-tool" target="_blank">
+        <Link href="https://github.com/hamproductions/receipt-parser" target="_blank">
           GitHub
         </Link>
       </Wrap>

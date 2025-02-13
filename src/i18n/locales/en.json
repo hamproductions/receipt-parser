@@ -1,17 +1,13 @@
 {
-  "title": "Kingblade x10iii Tuning Tool",
-  "description": "Tunes your super old Kingblade x10iii with ease",
-  "set_default_colors": "Set default colors",
-  "save_preset": "Save Preset",
-  "scan_qr_code": "Scan QR Code",
-  "color_settings": "Color Settings",
-  "site_name": "Kingbalde x10iii Tool",
+  "title": "Receipt Parser",
+  "description": "Turn your receipt into spending CSV",
+  "site_name": "Receipt Parser",
   "dialog": {
     "close": "Close"
   },
   "footer": {
     "created_by": "Created by",
-    "footer_text": "Algorithm from kjy00302 on GitHub",
+    "footer_text": "don't ask for API key",
     "source_code": "Check out source code on"
   },
   "error_page": {
@@ -22,5 +18,12 @@
     "copy": "Copy Error Message",
     "reload": "Reload Page",
     "clear": "Clear Data and Reload Page"
-  }
+  },
+  "api-key": "API Key",
+  "select-files": "Select Files",
+  "receipts-here": "Drop receipts here",
+  "results": "Results",
+  "flip-amount": "Flip Amount",
+  "download": "Download",
+  "remove": "Remove"
 }

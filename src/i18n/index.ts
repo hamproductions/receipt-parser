@@ -4,17 +4,17 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from './locales/en.json';
-import ja from './locales/ja.json';
+// import ja from './locales/ja.json';
 // don't want to use this?
 // have a look at the Quick start guide
 // for passing in lng and translations on init
 export const resources = {
   en: {
     translation: en
-  },
-  ja: {
-    translation: ja
   }
+  // ja: {
+  //   translation: ja
+  // }
 };
 
 void i18n
@@ -31,6 +31,7 @@ void i18n
   .init({
     lng: undefined,
     fallbackLng: 'en',
+    supportedLngs: ['en'],
     debug: import.meta.env.MODE === 'development',
     resources,
     interpolation: {
@@ -39,6 +40,6 @@ void i18n
   });
 
 // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
-export type Locale = 'en' | 'ja' | string;
+export type Locale = 'en' | string;
 
 export default i18n;
