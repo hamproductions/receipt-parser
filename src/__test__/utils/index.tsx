@@ -23,7 +23,6 @@ function AllTheProviders({ children }: { children: React.ReactNode }) {
 const customRender = async (ui: React.ReactNode, options?: RenderOptions) => {
   const user = userEvent.setup();
   const res = render(ui, { wrapper: AllTheProviders, ...options });
-  await user.click(await res.findByText('English'));
   return [res, user] as const;
 };
 

@@ -60,8 +60,6 @@ export function Page() {
         };
       });
 
-      console.log(results, newFiles);
-
       setResults([...results, ...newFiles]);
       setUploadedFiles([...uploadedFiles, ...fileUpload.acceptedFiles]);
 
@@ -81,7 +79,7 @@ export function Page() {
       rows[0],
       ...rows.slice(1).map((row) => {
         const items = row.split(',');
-        return [...items.slice(0, -1), Number(items.slice(-1)[0]) * -1].join(',');
+        return [...items.slice(0, -1), Number(items.at(-1)) * -1].join(',');
       })
     ].join('\n');
   };
@@ -103,6 +101,22 @@ export function Page() {
         return idx !== index;
       });
     });
+  };
+
+  const handleDownloadAll = () => {
+    const combined = [
+      results[0].csv.split('\n').slice(0)[0],
+      ...results.flatMap(({ csv }) => csv.split('\n').slice(1))
+    ].join('\n');
+    saveAs(
+      new Blob([combined]),
+      `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDate()}-combined.csv`
+    );
+  };
+
+  const handleClear = () => {
+    setResults([]);
+    setUploadedFiles([]);
   };
 
   return (
@@ -215,6 +229,12 @@ export function Page() {
               </Stack>
             </Stack>
           )}
+          <HStack>
+            <Button onClick={() => handleDownloadAll()}>{t('download-all')}</Button>
+            <Button variant="subtle" onClick={() => handleClear()}>
+              {t('clear')}
+            </Button>
+          </HStack>
         </Stack>
       </Center>
     </>

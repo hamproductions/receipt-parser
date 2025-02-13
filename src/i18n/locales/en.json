@@ -25,5 +25,7 @@
   "results": "Results",
   "flip-amount": "Flip Amount",
   "download": "Download",
-  "remove": "Remove"
+  "remove": "Remove",
+  "download-all": "Download All",
+  "clear": "Clear"
 }
