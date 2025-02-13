@@ -47,11 +47,15 @@ export function Page() {
     });
 
     try {
-      const res = await axios.post<string[]>('http://localhost:3001/gemini', formData, {
-        headers: {
-          ['x-gemini-secret']: apiKey
+      const res = await axios.post<string[]>(
+        `${import.meta.env.PUBLIC_ENV__API_BASE_URL}/gemini`,
+        formData,
+        {
+          headers: {
+            ['x-gemini-secret']: apiKey
+          }
         }
-      });
+      );
 
       const newFiles = files.map((f, idx) => {
         return {

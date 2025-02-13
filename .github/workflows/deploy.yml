@@ -14,7 +14,7 @@ jobs:
       - name: Install Dependencies
         uses: ./.github/composite-actions/setup
       - name: Build
-        run: PUBLIC_ENV__BASE_URL=/receipt-parser bun run ci:build
+        run: PUBLIC_ENV__BASE_URL=/receipt-parser,PUBLIC_ENV__API_BASE_URL=https://hambot.ham-san.net bun run ci:build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
