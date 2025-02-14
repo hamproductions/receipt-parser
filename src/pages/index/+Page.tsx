@@ -30,7 +30,9 @@ export function Page() {
   const isApiKeyFilled = !!apiKey;
 
   const fileUpload = useFileUpload({
-    disabled: !isApiKeyFilled || isControlsDisabled
+    disabled: !isApiKeyFilled || isControlsDisabled,
+    accept: 'image/*',
+    maxFiles: 40
   });
 
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
